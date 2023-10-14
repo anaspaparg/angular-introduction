@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PersonComponent } from './person/person.component';
 import { Person } from './interfaces/person';
+import { PersonAltComponent } from './person-alt/person-alt.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, PersonComponent],
+  imports: [CommonModule, PersonComponent, PersonAltComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -23,11 +24,10 @@ export class AppComponent {
   };
 
   person2: Person = {
-    givenName: 'Alice',
-    surname: 'W.',
-    age: 25,
-    email: 'alice.w@hotmail.com',
-    address: 'Kavala, Greece'
-  }
-  
+    givenName: 'Giorgos',
+    surname: 'Chatzidimitrakopoulos',
+    age: 22,
+    email: 'chtdim@hotmail.com',
+    address: 'Athens, Greece'
+  };
 }
