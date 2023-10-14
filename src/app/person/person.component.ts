@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Person } from '../interfaces/person';
 
 @Component({
   selector: 'app-person',
@@ -9,10 +10,12 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./person.component.css']
 })
 export class PersonComponent {
-  person = {
-    givenName: 'Anastasis',
-    surname: 'Papargyropoulos',
-    age: 32,
-    email: 'anpap@hotmail.com'
-  };
+  
+  @Input() person: Person = {
+    givenName: "The person's first name",
+    surname: "The person's last name",
+    age: 0,
+    email: "The person's email",
+    address: "The prson's address"
+  }
 }
