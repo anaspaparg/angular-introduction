@@ -1,13 +1,20 @@
-Εισαγωγή στo Angular Framework
+# Εισαγωγή στo Angular Framework
 
+## -1. Εγκατάσταση του Angular Command Line:
 
--1. Εγκατάσταση του Angular Command Line:
+```
 npm install -g @angular/cli@latest
+```
 
 Έλεγχος εγκατάστασης:
+
+```
 ng version
+```
 
 Ενδεικτικό output:
+
+```
      _                      _                 ____ _     ___
     / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
    / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
@@ -30,11 +37,17 @@ Package                      Version
 @angular-devkit/core         16.2.6 (cli-only)
 @angular-devkit/schematics   16.2.6 (cli-only)
 @schematics/angular          16.2.6 (cli-only)
+```
 
 Δημιουργία νέας εφαρμογής:
+
+```
 ng new angular-introduction --standalone
+```
 
 Ενδεικτικό output:
+
+```
 ? Would you like to add Angular routing? No
 ? Which stylesheet format would you like to use? CSS
             Standalone application structure is new and not yet supported by many existing 'ng add' and 'ng update' integrations with community libraries.
@@ -61,3 +74,4 @@ CREATE angular-introduction/src/app/app.config.ts (117 bytes)
 CREATE angular-introduction/src/assets/.gitkeep (0 bytes)
 ✔ Packages installed successfully.
     Successfully initialized git.
+```
