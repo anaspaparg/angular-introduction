@@ -1,5 +1,39 @@
 # Εισαγωγή στo Angular Framework
 
+## 7. Template driven forms
+
+-
+
+## 6. Component Output
+
+- Χρήση του decorator `@Output()` σε χαρακτηριστικό της κλάσης για τη δημιουργία custom event στο component. Συνδυάζεται με το interface `EventEmitter<T>` όπου `Τ` ο τύπος των δεδομένων που μεταδίδει το custom event.
+- To custom event συνήθως προκύπτει από ένα standard event στο template του component (πχ click πάνω σε ένα κουμπί).
+
+> Χρήση του `index` με το \*ngFor (αυτόματη αρίθμηση με το `i` κατά τη διάσχιση του πίνακα):
+>
+> ```html
+> <tr *ngFor="let user of userData; index as i">
+>   <td>{{ i }}</td>
+> </tr>
+> ```
+
+- Δεσμεύουμε τα custom events ενός child component δημιουργώντας event handlers όπως ακριβώς με τα standard events. Π.χ. στο template του parent component:
+
+  ```html
+  <app-output-demo [userData]="users" (deleteUser)="onDeleteUser($event)" (sendUser)="onSendUser($event)"> </app-output-demo>
+  ```
+
+- Στη συνέχεια δημιουργούμε στην κλάση του parent component τους event handlers:
+
+  ```typescript
+  onDeleteUser(i: number) {
+    this.users.splice(i, 1);
+  }
+
+  onSendUser(user: Person) {
+    this.sentUser = user;
+  }
+
 ## 5. Event Binding (template -> controller)
 
 - Click handlers
