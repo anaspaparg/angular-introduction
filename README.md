@@ -1,5 +1,11 @@
 # Εισαγωγή στo Angular Framework
 
+## 12. CRUD users: Read Users
+
+- Πρόσβαση σε template variable του @Viewchild
+
+## 11. CRUD users: List Users
+
 ## 10. CRUD users scaffolding
 
 -
