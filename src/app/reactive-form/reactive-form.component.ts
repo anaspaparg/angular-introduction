@@ -25,6 +25,6 @@ export class ReactiveFormComponent {
 
   onSubmit() {
     this.person.emit(this.form.value as unknown as Person);
-    this
+    this.form.reset();
   }
 }
