@@ -46,15 +46,6 @@
       "photoURL": "https://i.pravatar.cc/?img=5"
     },
     {
-      "id": 6,
-      "givenName": "Judy",
-      "surName": "Smith",
-      "age": 34,
-      "email": "judy.smith@example.com",
-      "address": "789 Broadway",
-      "photoURL": "https://i.pravatar.cc/?img=6"
-    },
-    {
       "id": 7,
       "givenName": "Jack",
       "surName": "Johnson",
