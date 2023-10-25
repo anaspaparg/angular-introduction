@@ -16,7 +16,7 @@ export class CreateUserComponent {
   constructor(private appService: AppService = Inject(AppService)) {}
 
     onUser(user: Person) {
-      this.appService.addUser(user).subscribe(user => {
+      this.appService.addUser(user).subscribe((user) => {
         console.log(user);
         this.userCreated.emit();
       })
